@@ -50,7 +50,7 @@ export const HomePage: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-1 bg-[hsl(var(--primary))] opacity-10 group-hover:opacity-100 transition-opacity no-print" />
 
             <div className="space-y-6 sm:space-y-8">
-              <div className="w-12 h-1 bg-[hsl(var(--primary)/0.2)] no-print" />
+            <div className="space-y-6 sm:space-y-8 no-print">
               <div className="space-y-3 sm:space-y-4">
                 <h2 className="text-3xl sm:text-4xl font-serif text-black leading-tight italic">
                   Hello World
