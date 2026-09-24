@@ -4,23 +4,23 @@ import { Printer } from 'lucide-react';
 
 export const Layout: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col font-sans">
+    <div className="min-h-screen flex flex-col font-sans selection:bg-[hsl(var(--secondary))]">
       {/* Navbar */}
-      <nav className="glass sticky top-0 z-50 border-b border-white/20 px-6 py-4 no-print">
+      <nav className="bg-[hsl(var(--background))] border-b-4 border-[hsl(var(--border))] px-6 py-6 no-print">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="p-2 rounded-lg gradient-primary text-white shadow-glow group-hover:scale-110 transition-transform">
-              <Printer size={20} />
+          <Link to="/" className="flex items-center gap-4 group">
+            <div className="p-2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] retro-border retro-shadow transition-transform group-hover:-rotate-3">
+              <Printer size={28} />
             </div>
-            <span className="text-xl font-bold tracking-tight text-gradient">
+            <span className="text-3xl font-black tracking-tighter uppercase text-[hsl(var(--foreground))]">
               HelloPrint
             </span>
           </Link>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-8">
             <Link
               to="/"
-              className="text-sm font-medium hover:text-[hsl(var(--primary))] transition-colors"
+              className="text-lg font-black uppercase tracking-widest hover:text-[hsl(var(--primary))] transition-colors underline decoration-4 underline-offset-8 decoration-transparent hover:decoration-[hsl(var(--primary))]"
             >
               Home
             </Link>
@@ -34,13 +34,19 @@ export const Layout: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-[hsl(var(--border))] no-print">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm text-[hsl(var(--muted-foreground))]">
-            © {new Date().getFullYear()} HelloPrint. Built with precision and clarity.
+      <footer className="py-12 px-6 border-t-4 border-[hsl(var(--border))] bg-[hsl(var(--muted))] no-print">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+          <p className="text-lg font-bold uppercase tracking-wider text-[hsl(var(--foreground))]">
+            © {new Date().getFullYear()} HelloPrint. ALL RIGHTS RESERVED.
           </p>
+          <div className="flex gap-4">
+             <div className="w-8 h-8 bg-[hsl(var(--primary))] retro-border" />
+             <div className="w-8 h-8 bg-[hsl(var(--secondary))] retro-border" />
+             <div className="w-8 h-8 bg-[hsl(var(--accent))] retro-border" />
+          </div>
         </div>
       </footer>
     </div>
   );
 };
+
