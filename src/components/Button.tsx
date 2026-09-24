@@ -12,7 +12,7 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseStyles = 'inline-flex items-center justify-center font-bold uppercase tracking-wider transition-all retro-border retro-shadow-hover retro-shadow-active active:translate-y-0.5 active:translate-x-0.5 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseStyles = 'inline-flex items-center justify-center font-bold uppercase tracking-wider retro-border retro-shadow-hover retro-shadow-active active:translate-y-0.5 active:translate-x-0.5 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed';
   
   const variants = {
     primary: 'bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))]',

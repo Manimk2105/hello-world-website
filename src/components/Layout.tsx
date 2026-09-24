@@ -9,7 +9,7 @@ export const Layout: React.FC = () => {
       <nav className="bg-[hsl(var(--background))] border-b-4 border-[hsl(var(--border))] px-6 py-6 no-print">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-4 group">
-            <div className="p-2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] retro-border retro-shadow transition-transform group-hover:-rotate-3">
+            <div className="p-2 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] retro-border retro-shadow group-hover:-rotate-3">
               <Printer size={28} />
             </div>
             <span className="text-3xl font-black tracking-tighter uppercase text-[hsl(var(--foreground))]">
@@ -20,7 +20,7 @@ export const Layout: React.FC = () => {
           <div className="flex items-center gap-8">
             <Link
               to="/"
-              className="text-lg font-black uppercase tracking-widest hover:text-[hsl(var(--primary))] transition-colors underline decoration-4 underline-offset-8 decoration-transparent hover:decoration-[hsl(var(--primary))]"
+              className="text-lg font-black uppercase tracking-widest hover:text-[hsl(var(--primary))] underline decoration-4 underline-offset-8 decoration-transparent hover:decoration-[hsl(var(--primary))]"
             >
               Home
             </Link>
